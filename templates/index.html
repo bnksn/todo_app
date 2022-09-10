@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Home page</title>
+</head>
+<body>
+
+    <header class="header">
+        <h1>todo</h1>
+    </header>
+
+    <main>
+        <form action="/add" method = "POST">
+            <input type = "text" name = "add"/> <input type = "submit" value = "add"/>
+         </form>
+         <form action="/remove" method = "POST">
+            <input type = "text" name = "remove"/> <input type = "submit" value = "remove"/>
+         </form>
+         <br>
+         <div class="items">
+         {% for item in data %}
+            {{item[0]}}<br>
+         {% endfor %}
+        </div>
+    </main>
+
+</body>
+</html>
