@@ -7,4 +7,4 @@ This is a simple todo list web app that has been built using the Flask framework
 3. Create a mysql database with one column
 4. Edit site.py by adding in the database information
 5. Run site.py
-6. Use the app (the default address will be localhost:5000)
+6. Connect to the app (the default address will be localhost:5000)
