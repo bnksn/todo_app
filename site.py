@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 from flask_mysqldb import MySQL
 
 #CHANGE THESE
-mysql_user = 'ben'
-mysql_password = 'password'
-mysql_host = 'localhost'
-mysql_db = 'todo'
-mysql_table = 'todo_table'
+mysql_user = ''
+mysql_password = ''
+mysql_host = ''
+mysql_db = ''
+mysql_table = ''
 
 app = Flask(__name__)
 mysql = MySQL(app)
